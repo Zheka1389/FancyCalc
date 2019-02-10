@@ -32,5 +32,14 @@ namespace FancyCalc
             var calc = new FancyCalcEnguine();
             return calc.Multiply(a, b);
         }
+
+        [Test]
+        public void Test1()
+        {
+            var calc = new FancyCalcEnguine();
+            double expected = 6;
+            double actual = calc.Culculate("3+3");
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
