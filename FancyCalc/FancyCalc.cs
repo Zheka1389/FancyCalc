@@ -65,7 +65,7 @@ namespace FancyCalc
             }
             else
             {
-                throw new Exception();
+                throw new ArgumentNullException();
             }
         }
     }
